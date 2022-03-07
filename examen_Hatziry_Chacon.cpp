@@ -27,6 +27,18 @@ int main() {
             cout<<"\nEl factorial de "<<n1<<"es: "<<factorial<<endl;
         }
 			break;
+			
+		case 2:{
+		
+            cout<<"\nIngrese el numero que desea consultar"<<endl;
+            cin>>n1;
+            cout<<"\nLa tabla de multiplicar de"<<n1<<"es la siguiente"<<endl;
+
+            for (int i = 1; i <=10 ; ++i) {
+                cout<<n1<<" X "<<i<<"= "<<n1*i<<endl;
+            }
+        }	
+			break;
  return 0;
 	}
 }
