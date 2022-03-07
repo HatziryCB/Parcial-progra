@@ -105,7 +105,8 @@ int main() {
 		}
 		break;
 		
-		case 5: 
+		case 5:{
+	
         	int pin, contador=0;
         	cout<<"\nBienvenido a su banca vitual, por favor ingrese su pin en el siguiente apartado: "<<endl;
         	cin>>pin;
@@ -122,8 +123,16 @@ int main() {
 					cout<<"\nCuenta bloqueada luego de 3 intentos, sera notificado en breve para su verificacion"<<endl;
 				}
 			}while (contador<3);
-        	break;
+    	}
+		break;
+        
+		case 6:{
+        	cout<<"\nGracias por utilizar nuestros servicios"<<endl;
+		}
+		break;	
+    }
+    system("pause");	
  
  return 0;
-	}
+	
 }
