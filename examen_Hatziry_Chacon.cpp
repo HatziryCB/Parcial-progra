@@ -39,6 +39,36 @@ int main() {
             }
         }	
 			break;
+			
+		case 3:{
+	
+        	
+        	int i=0, num, contpar, contimp, promimp;
+            cout<<"\nPara hacer los calculos correspondientes debe ingresar 10 numeros enteros a continuacion:  "<<endl;
+
+            while (i<10){
+                cout<<"\nIngrese el numero "<<i+1<<endl;
+                cin>>num;
+                i++;
+                if (num%2==0)
+                {
+                    num+=num;
+                    contpar++;
+                   
+                }
+                else
+                    {
+                        contimp++;
+                    } 
+            }
+	            promimp=contpar/contimp;
+	            cout<<"\nLos numeros pares son: "<<contpar<<endl;
+	            cout<<"Los numeros impares son: "<<contimp<<endl;
+	            cout<<"la suma de los numeros impares es: "<<num<<endl;
+	            cout<<"El promedio de impares es: "<<promimp<<endl;
+	            
+	  		 }
+	  		 break;
  return 0;
 	}
 }
