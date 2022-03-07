@@ -105,6 +105,24 @@ int main() {
 		}
 		break;
 		
+		case 5: 
+        	int pin, contador=0;
+        	cout<<"\nBienvenido a su banca vitual, por favor ingrese su pin en el siguiente apartado: "<<endl;
+        	cin>>pin;
+        	
+        	do{
+        		if (pin==123456){
+        			cout<<"Bienvenido al sistema, Tu saldo es de 100 usd"<<endl;
+				}
+				else {
+					cout<<"\nLa contraseña es incorrectos"<<endl;
+					contador++;
+				}
+				if (contador=3){
+					cout<<"\nCuenta bloqueada luego de 3 intentos, sera notificado en breve para su verificacion"<<endl;
+				}
+			}while (contador<3);
+        	break;
  
  return 0;
 	}
