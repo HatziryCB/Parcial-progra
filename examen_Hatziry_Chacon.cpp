@@ -69,6 +69,43 @@ int main() {
 	            
 	  		 }
 	  		 break;
+	  		 
+	  	case 4:{
+	
+        	
+        	int dia;
+	    	cout<<"\nSeleccione el numero del día que desea consultar: "<<endl;
+	    	cout<<"\n1. Lunes"<<endl;
+	    	cout<<"2 Martes"<<endl;
+	    	cout<<"3. Miercoles"<<endl;
+	    	cout<<"4. Jueves"<<endl;
+	    	cout<<"5. Viernes"<<endl;
+	    	cout<<"6. Sabado"<<endl;
+	    	cout<<"7. Domingo"<<endl;
+	    	cin>>dia;
+	    	
+	    	switch (dia){
+	    		case 1:
+	    			cout<<"El horario de atencion de los dias Lunes es 7 am/ 4 pm"<<endl;
+	    		case 2:
+	    			cout<<"El horario de atencion de los dias Martes es 7 am/ 4 pm"<<endl;
+	    		case 3:
+	    			cout<<"El horario de atencion de los dias Miercoles es 7 am/ 4 pm"<<endl;
+	    		case 4:
+	    			cout<<"El horario de atencion de los dias Jueves es 7 am/ 4 pm"<<endl;
+	    		case 5:
+	    			cout<<"El horario de atencion de los dias Viernes es 7 am/ 4 pm"<<endl;
+	    		case 6:
+	    			cout<<"Lamentamos informarte que los dias Sabado no contamos con servicio"<<endl;
+	    		case 7:
+	    			cout<<"Lamentamos informarte que los dias Domingo no contamos con servicio"<<endl;
+	    		default:
+	    		cout<<"Error"<<endl;
+			}
+		}
+		break;
+		
+ 
  return 0;
 	}
 }
